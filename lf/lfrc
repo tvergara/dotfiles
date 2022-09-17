@@ -3,6 +3,8 @@ set ignorecase true # ignore case when searching
 set icons true
 set drawbox
 
+set ifs "\n"
+
 map <enter> shell
 map <esc> quit
 
@@ -19,8 +21,10 @@ cmd delete ${{
 }}
 map DD delete
 
-
+# remove some default mappings
 map m
+map s
+
 cmd copy_path ${{
     set -f
     echo "$f" | tr -d '\n' | pbcopy
