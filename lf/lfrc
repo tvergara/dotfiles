@@ -1,0 +1,6 @@
+set hidden true # show dotfiles
+set ignorecase true # ignore case when searching
+set icons true
+
+map <enter> shell
+map <esc> quit
