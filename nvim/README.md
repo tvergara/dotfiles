@@ -1,7 +1,5 @@
 # Neovim configuration
 
-I'm just starting with vim. This is my configuration. It is mostly copy pasted from various sources.
-
 ## Installation
 
 First, install `nvim`.
@@ -10,13 +8,9 @@ First, install `nvim`.
 brew install nvim
 ```
 
-Then clone this repository under the `~/.config/nvim` directory.
-
+Then you must link this repository to let nvim recognize the configs.
 ```
-cd ~/config
-mkdir nvim
-cd nvim
-git clone https://github.com/Tvergara/nvim.git 
+ln -s ~/.config/nvim/ ~/path/to/this/repository/nvim/
 ```
 
 Now open `nvim` and run `:PlugInstall`.
