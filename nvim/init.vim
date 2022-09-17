@@ -49,8 +49,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'mileszs/ack.vim'
-Plug 'tpope/vim-rails'
-Plug 'skanehira/getpr.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 call plug#end()
 
