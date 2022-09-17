@@ -32,3 +32,18 @@ cmd open ${{
     test -L $f && f=$(readlink -f $f)
     $EDITOR $fx
 }}
+
+cmd mkdir ${{
+  printf "Directory Name: "
+  read ans
+  mkdir $ans
+    lf -remote 'send echo ✅ Directory created.'
+}}
+map md mkdir
+
+cmd mkfile ${{
+  printf "File Name: "
+  read ans
+  $EDITOR $ans
+}}
+map mf mkfile
