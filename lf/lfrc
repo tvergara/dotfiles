@@ -4,3 +4,21 @@ set icons true
 
 map <enter> shell
 map <esc> quit
+
+cmd delete ${{
+    set -f
+    printf "$fx\n"
+    printf "delete?[y/n]: "
+    read ans
+    [ "$ans" = "y" ] && rm -rf $fx
+}}
+map DD delete
+
+
+cmd copy_path ${{
+    set -f
+    echo "$f" | pbcopy
+    echo "copied file path"
+}}
+map f copy_path
+
