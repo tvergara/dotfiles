@@ -47,7 +47,6 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'mileszs/ack.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'ptzz/lf.vim'
 Plug 'voldikss/vim-floaterm'
@@ -83,9 +82,6 @@ endif
 
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> rn <Plug>(coc-rename)
-
-" set s as a shortcut for searching
-:cnoreabbrev s Ack
 
 autocmd InsertLeave * write
 
