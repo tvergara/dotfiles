@@ -24,6 +24,7 @@ map DD delete
 # remove some default mappings
 map m
 map s
+map n
 
 cmd copy_path ${{
     set -f
@@ -51,3 +52,8 @@ cmd mkfile ${{
   $EDITOR $ans
 }}
 map mf mkfile
+
+cmd nvim ${{
+  $EDITOR
+}}
+map nvim nvim
