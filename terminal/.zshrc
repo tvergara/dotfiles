@@ -21,3 +21,4 @@ fi
 alias dr='doppler run --'
 alias drbe='doppler run -- bundle exec'
 export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
+export LS_COLORS="$(vivid generate molokai)"

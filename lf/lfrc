@@ -1,6 +1,7 @@
 set hidden true # show dotfiles
 set ignorecase true # ignore case when searching
 set icons true
+set drawbox
 
 map <enter> shell
 map <esc> quit
@@ -10,15 +11,20 @@ cmd delete ${{
     printf "$fx\n"
     printf "delete?[y/n]: "
     read ans
-    [ "$ans" = "y" ] && rm -rf $fx
+    if [ "$ans" = "y" ]
+    then
+        rm -rf $fx
+        lf -remote 'send echo ✅ File deleted.'
+    fi
 }}
 map DD delete
 
 
+map m
 cmd copy_path ${{
     set -f
-    echo "$f" | pbcopy
-    echo "copied file path"
+    echo "$f" | tr -d '\n' | pbcopy
+    lf -remote 'send echo ✅ File path copied.'
 }}
-map f copy_path
+map mp copy_path
 
