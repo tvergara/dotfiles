@@ -22,3 +22,11 @@ alias dr='doppler run --'
 alias drbe='doppler run -- bundle exec'
 export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
 export LS_COLORS="$(vivid generate molokai)"
+
+LFCD="$GOPATH/src/github.com/gokcehan/lf/etc/lfcd.sh"
+LFCD="/Users/tomasvergara/dotfiles/lf/lfcd.sh"
+if [ -f "$LFCD" ]; then
+    source "$LFCD"
+fi
+
+bindkey -s '^F' 'lfcd\n'
