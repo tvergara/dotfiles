@@ -107,3 +107,6 @@ command Wq wq
 
 " map <C-v> to split view
 nmap <C-v> :vsplit<cr>
+
+" mas ctrl s to search
+nmap <C-s> :Rg<cr>
