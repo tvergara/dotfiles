@@ -51,6 +51,7 @@ Plug 'mileszs/ack.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'ptzz/lf.vim'
 Plug 'voldikss/vim-floaterm'
+Plug 'tpope/vim-repeat'
 call plug#end()
 
 colorscheme gruvbox
