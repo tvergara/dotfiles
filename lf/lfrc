@@ -28,3 +28,7 @@ cmd copy_path ${{
 }}
 map mp copy_path
 
+cmd open ${{
+    test -L $f && f=$(readlink -f $f)
+    $EDITOR $fx
+}}

@@ -28,5 +28,6 @@ LFCD="/Users/tomasvergara/dotfiles/lf/lfcd.sh"
 if [ -f "$LFCD" ]; then
     source "$LFCD"
 fi
-
 bindkey -s '^F' 'lfcd\n'
+
+export EDITOR="nvim"
