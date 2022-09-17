@@ -32,7 +32,6 @@ Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
-Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -64,11 +63,8 @@ let g:airline#extension#tabline#left_alt_sep='|'
 let g:airline#extension#tabline#formatter='unique_tail'
 let NERDTreeQuitOnOpen=1
 
-" NERDtree settings
-nmap <C-f> :NERDTreeToggle<CR>
-nmap <C-c> :NERDTreeFind<cr>
-" Close the tab if NERDTree is the only window remaining in it.
-autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+nmap <C-f> :LfWorkingDirectory<CR>
+nmap <C-c> :LfCurrentFile<cr>
 
 " set dr as a shortcut for using doppler
 :cnoreabbrev dr !doppler run --
