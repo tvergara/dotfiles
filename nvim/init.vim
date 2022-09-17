@@ -104,3 +104,6 @@ command Q q
 cnoreabbrev g G
 cnoreabbrev git Git
 command Wq wq
+
+" map <C-v> to split view
+nmap <C-v> :vsplit<cr>
