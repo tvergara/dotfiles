@@ -52,6 +52,7 @@ Plug 'ptzz/lf.vim'
 Plug 'voldikss/vim-floaterm'
 Plug 'tpope/vim-repeat'
 Plug 'kristijanhusak/vim-create-pr'
+Plug 'tvergara/go-to-pr.vim'
 call plug#end()
 
 colorscheme gruvbox
@@ -108,3 +109,5 @@ nmap <C-v> :vsplit<cr>
 
 " mas ctrl s to search
 nmap <C-s> :Rg<cr>
+
+" nmap gpr :GoToPR<cr>
