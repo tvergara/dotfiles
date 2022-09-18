@@ -1,3 +1,9 @@
+# oh my zsh config
+ZSH_THEME="robbyrussell"
+export ZSH="$HOME/.oh-my-zsh"
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
+
 eval "$(rbenv init - zsh)"
 
 export NVM_DIR="$HOME/.nvm"
@@ -35,4 +41,3 @@ bindkey -s '^F' 'lfcd\n'
 
 export EDITOR="nvim"
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
-
