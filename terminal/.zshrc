@@ -23,6 +23,9 @@ alias drbe='doppler run -- bundle exec'
 export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
 export LS_COLORS="$(vivid generate molokai)"
 
+# Enable vi mode
+bindkey -v
+
 LFCD="$GOPATH/src/github.com/gokcehan/lf/etc/lfcd.sh"
 LFCD="/Users/tomasvergara/dotfiles/lf/lfcd.sh"
 if [ -f "$LFCD" ]; then
@@ -32,3 +35,4 @@ bindkey -s '^F' 'lfcd\n'
 
 export EDITOR="nvim"
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+
