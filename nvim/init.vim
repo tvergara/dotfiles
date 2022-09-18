@@ -110,4 +110,11 @@ nmap <C-v> :vsplit<cr>
 " mas ctrl s to search
 nmap <C-s> :Rg<cr>
 
-" nmap gpr :GoToPR<cr>
+function! s:ToggleBlame()
+    if &l:filetype ==# 'fugitiveblame'
+        close
+    else
+        Git blame --date=short
+    endif
+endfunction
+nnoremap gb :call <SID>ToggleBlame()<CR>
