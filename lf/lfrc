@@ -71,3 +71,8 @@ cmd fzf_jump ${{
     lf -remote "send $id $cmd \"$res\""
 }}
 map <c-p> :fzf_jump
+
+# map shortcuts
+map gc cd ~/fintoc/cowry
+map gr cd ~/fintoc/fintoc-rails
+map gw cd ~/fintoc/wizard
