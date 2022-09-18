@@ -16,7 +16,6 @@ filetype plugin indent on   " Allow auto-indenting depending on file type
 syntax on
 set spell " enable spell check (may need to download language package)
 set ttyfast " Speed up scrolling in Vim
-inoremap jj <Esc>  
 set ignorecase " Ignore case when searching
 
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
