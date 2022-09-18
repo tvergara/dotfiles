@@ -1,0 +1,20 @@
+[user]
+	name = tvergara
+	email = tomvergara@uc.cl
+
+[alias]
+	co = checkout
+	cm = commit
+	st = status
+	br = branch
+	ca = commit --amend
+	rb = rebase -i
+	aa = add --all
+	wip = commit -a -m "wip"
+	dewip = reset HEAD~1
+	rb-last = "!f() { git rebase -i HEAD~$1; }; f"
+	pf = push -f
+	p = push
+
+[push]
+  default = upstream
