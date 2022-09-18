@@ -60,7 +60,7 @@ map nvim nvim
 
 
 cmd fzf_jump ${{
-    res="$(find . -maxdepth 10 | fzf --reverse --header='Jump to location'| sed 's/\\/\\\\/g;s/"/\\"/g')"
+    res="$(fzf --reverse --header='Jump to location'| sed 's/\\/\\\\/g;s/"/\\"/g')"
     if [ -d "$res" ] ; then
         cmd="cd"
     elif [ -f "$res" ] ; then

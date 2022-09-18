@@ -40,4 +40,4 @@ fi
 bindkey -s '^F' 'lfcd\n'
 
 export EDITOR="nvim"
-export FZF_DEFAULT_COMMAND='fd --type f --exclude={.git,.idea,.vscode,.sass-cache,node_modules,build,tmp,plugged,.rbenv,Library,.local}'
+export FZF_DEFAULT_COMMAND='fd --type f --exclude={.git,.idea,.vscode,.sass-cache,node_modules,build,tmp,plugged,.rbenv,Library,.local} 2> /dev/null'
