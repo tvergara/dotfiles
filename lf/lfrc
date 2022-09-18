@@ -42,14 +42,15 @@ cmd mkdir ${{
   printf "Directory Name: "
   read ans
   mkdir $ans
-    lf -remote 'send echo ✅ Directory created.'
+  lf -remote 'send echo ✅ Directory created.'
 }}
 map md mkdir
 
 cmd mkfile ${{
   printf "File Name: "
   read ans
-  $EDITOR $ans
+  touch $ans
+  lf -remote 'send echo ✅ File created.'
 }}
 map mf mkfile
 
