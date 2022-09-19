@@ -118,3 +118,7 @@ function! s:ToggleBlame()
     endif
 endfunction
 nnoremap gb :call <SID>ToggleBlame()<CR>
+
+" do not store { and } jumps in history
+nnoremap } :<C-u>execute "keepjumps norm! " . v:count1 . "}"<CR>
+nnoremap { :<C-u>execute "keepjumps norm! " . v:count1 . "{"<CR>
