@@ -8,13 +8,14 @@
 	st = status
 	br = branch
 	ca = commit --amend
-	rb = rebase -i
+	rb = rebase
 	aa = add --all
-	wip = commit -a -m "wip"
+	wip = commit -a -m "wip" --no-verify
 	dewip = reset HEAD~1
-	rb-last = "!f() { git rebase -i HEAD~$1; }; f"
+	rb-last = "!f() { git rebase -i -r HEAD~$1; }; f"
 	pf = push -f
 	p = push
+	pl = pull
 
 [push]
   default = upstream
