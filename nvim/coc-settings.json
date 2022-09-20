@@ -6,6 +6,7 @@
   "solargraph.formatting": true,
   "solargraph.diagnostics": true,
   "solargraph.hover": true,
+  "solargraph.definition": true,
   "solargraph.commandPath": "/Users/tomasvergara/.rbenv/shims/solargraph"
 }
 

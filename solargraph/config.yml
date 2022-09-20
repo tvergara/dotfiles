@@ -1,0 +1,3 @@
+formatter:
+  rubocop:
+    except: ['RSpec/Focus']
