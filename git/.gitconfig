@@ -7,15 +7,16 @@
 	cm = commit
 	st = status
 	br = branch
-	ca = commit --amend
+	ca = commit --amend --reuse-message=HEAD
 	rb = rebase
 	aa = add --all
 	wip = commit -a -m "wip" --no-verify
 	dewip = reset HEAD~1
 	rb-last = "!f() { git rebase -i -r HEAD~$1; }; f"
 	pf = push -f
-	p = push
+	p = push -u
 	pl = pull
+	fix = commit --fixup
 
 [push]
-  default = upstream
+	default = current

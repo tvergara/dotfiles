@@ -11,7 +11,7 @@ set relativenumber " set relative line numbe set relative line numberss
 set splitbelow splitright " Change the split screen behavior
 set title " Show file title
 set wildmenu " Show a more advance menu
-set cc=80 " Show at 80 column a border for good code style
+set cc=100 " Show at 80 column a border for good code style
 filetype plugin indent on   " Allow auto-indenting depending on file type
 syntax on
 set spell " enable spell check (may need to download language package)
@@ -103,6 +103,7 @@ command Q q
 cnoreabbrev g G
 cnoreabbrev git Git
 command Wq wq
+command Pretty %!python3 -m json.tool
 
 " map <C-v> to split view
 nmap <C-v> :vsplit<cr>

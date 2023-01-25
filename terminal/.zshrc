@@ -4,6 +4,7 @@ export ZSH="$HOME/.oh-my-zsh"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
+eval "$(direnv hook zsh)"
 eval "$(rbenv init - zsh)"
 
 export NVM_DIR="$HOME/.nvm"
@@ -48,3 +49,9 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
 setopt HIST_FIND_NO_DUPS
 setopt HIST_SAVE_NO_DUPS
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/tomasvergara/Applications/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/tomasvergara/Applications/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/tomasvergara/Applications/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/tomasvergara/Applications/google-cloud-sdk/completion.zsh.inc'; fi

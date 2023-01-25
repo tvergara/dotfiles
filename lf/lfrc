@@ -55,6 +55,7 @@ cmd mkfile ${{
 map mf mkfile
 
 cmd nvim ${{
+  lf -remote 'send quit'
   $EDITOR
 }}
 map nvim nvim
