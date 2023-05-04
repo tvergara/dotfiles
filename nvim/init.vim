@@ -53,6 +53,7 @@ Plug 'voldikss/vim-floaterm'
 Plug 'tpope/vim-repeat'
 Plug 'kristijanhusak/vim-create-pr'
 Plug 'tvergara/go-to-pr.vim'
+Plug 'kiyoon/jupynium.nvim', { 'do': 'pip3 install --user .' }
 call plug#end()
 
 colorscheme gruvbox
@@ -67,9 +68,6 @@ let NERDTreeQuitOnOpen=1
 
 nmap <C-f> :LfWorkingDirectory<CR>
 nmap <C-c> :LfCurrentFile<cr>
-
-" set dr as a shortcut for using doppler
-:cnoreabbrev dr !doppler run --
 
 " add ctrl p as a shortcut for using fzf
 nmap <C-p> :GFiles --cached --others --exclude-standard<CR>
@@ -123,3 +121,7 @@ nnoremap gb :call <SID>ToggleBlame()<CR>
 " do not store { and } jumps in history
 nnoremap } :<C-u>execute "keepjumps norm! " . v:count1 . "}"<CR>
 nnoremap { :<C-u>execute "keepjumps norm! " . v:count1 . "{"<CR>
+
+" jupyter notebook bindings
+nmap note :JupyniumStartSync<cr>
+nmap <c-return> :JupyniumExecuteSelectedCells<cr>
