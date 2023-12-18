@@ -55,3 +55,8 @@ if [ -f '/Users/tomasvergara/Applications/google-cloud-sdk/path.zsh.inc' ]; then
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/tomasvergara/Applications/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/tomasvergara/Applications/google-cloud-sdk/completion.zsh.inc'; fi
+
+# shortcut to link ialab notebook to local enviroment
+alias hydra-notebook='ssh -L 8889:hydra.ing.puc.cl:8889 hydra'
+
+
