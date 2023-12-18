@@ -1,0 +1,8 @@
+Host ialab
+    User tvergara
+    HostName kraken.ing.puc.cl
+
+Host hydra
+  HostName hydra
+  User tvergara
+  ProxyJump ialab
