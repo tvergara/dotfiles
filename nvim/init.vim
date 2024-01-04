@@ -54,6 +54,7 @@ Plug 'tpope/vim-repeat'
 Plug 'kristijanhusak/vim-create-pr'
 Plug 'tvergara/go-to-pr.vim'
 Plug 'kiyoon/jupynium.nvim', { 'do': 'pip3 install --user .' }
+Plug 'dccsillag/magma-nvim', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
 
 colorscheme gruvbox
@@ -125,3 +126,17 @@ nnoremap { :<C-u>execute "keepjumps norm! " . v:count1 . "{"<CR>
 " jupyter notebook bindings
 nmap note :JupyniumStartSync<cr>
 nmap <c-return> :JupyniumExecuteSelectedCells<cr>
+
+
+" magma vim mappings
+let maplocalleader = "\\"
+nnoremap <silent><expr> <LocalLeader>r  :MagmaEvaluateOperator<CR>
+nnoremap <silent>       <LocalLeader>rr :MagmaEvaluateLine<CR>
+xnoremap <silent>       <LocalLeader>r  :<C-u>MagmaEvaluateVisual<CR>
+nnoremap <silent>       <LocalLeader>rc :MagmaReevaluateCell<CR>
+nnoremap <silent>       <LocalLeader>rd :MagmaDelete<CR>
+nnoremap <silent>       <LocalLeader>ro :MagmaShowOutput<CR>
+
+let g:magma_automatically_open_output = v:false
+" installing 'kitty' would be required to get an image provider
+let g:magma_image_provider = "none"
