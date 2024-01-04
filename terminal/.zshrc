@@ -57,6 +57,6 @@ if [ -f '/Users/tomasvergara/Applications/google-cloud-sdk/path.zsh.inc' ]; then
 if [ -f '/Users/tomasvergara/Applications/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/tomasvergara/Applications/google-cloud-sdk/completion.zsh.inc'; fi
 
 # shortcut to link ialab notebook to local enviroment
-alias hydra-notebook='ssh -L 8889:hydra.ing.puc.cl:8889 hydra'
+alias hydra-notebook='ssh -L 8889:hydra.ing.puc.cl:8889 -L 6006:hydra.ing.puc.cl:6006 hydra'
 
 
