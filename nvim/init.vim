@@ -138,5 +138,4 @@ nnoremap <silent>       <LocalLeader>rd :MagmaDelete<CR>
 nnoremap <silent>       <LocalLeader>ro :MagmaShowOutput<CR>
 
 let g:magma_automatically_open_output = v:false
-" installing 'kitty' would be required to get an image provider
-let g:magma_image_provider = "none"
+let g:magma_image_provider = "kitty"
