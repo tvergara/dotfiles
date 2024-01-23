@@ -6,3 +6,8 @@ Host hydra
   HostName hydra
   User tvergara
   ProxyJump ialab
+
+Host llaima
+  HostName llaima
+  User tvergara
+  ProxyJump ialab
