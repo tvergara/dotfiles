@@ -33,8 +33,7 @@ export LS_COLORS="$(vivid generate molokai)"
 # Enable vi mode
 bindkey -v
 
-LFCD="$GOPATH/src/github.com/gokcehan/lf/etc/lfcd.sh"
-LFCD="/Users/tomasvergara/dotfiles/lf/lfcd.sh"
+LFCD="/Users/tom/dotfiles/lf/lfcd.sh"
 if [ -f "$LFCD" ]; then
     source "$LFCD"
 fi
