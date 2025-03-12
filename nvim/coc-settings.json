@@ -7,6 +7,11 @@
   "solargraph.diagnostics": true,
   "solargraph.hover": true,
   "solargraph.definition": true,
-  "solargraph.commandPath": "/Users/tomasvergara/.rbenv/shims/solargraph"
+  "solargraph.commandPath": "/Users/tomasvergara/.rbenv/shims/solargraph",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": ["--max-line-length=100"],
+  "python.linting.pycodestyleEnabled": false
 }
 

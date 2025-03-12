@@ -11,3 +11,8 @@ Host llaima
   HostName llaima
   User tvergara
   ProxyJump ialab
+
+Host *
+    IgnoreUnknown AddKeysToAgent,UseKeychain
+    AddKeysToAgent yes
+    UseKeychain yes

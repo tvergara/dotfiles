@@ -38,6 +38,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-solargraph',
+  \ 'coc-pyright',
   \ ]
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'

@@ -49,13 +49,14 @@ setopt HIST_IGNORE_SPACE
 setopt HIST_FIND_NO_DUPS
 setopt HIST_SAVE_NO_DUPS
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/tomasvergara/Applications/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/tomasvergara/Applications/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/tomasvergara/Applications/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/tomasvergara/Applications/google-cloud-sdk/completion.zsh.inc'; fi
-
 # shortcut to link ialab notebook to local enviroment
-alias hydra-notebook='ssh -L 8889:hydra.ing.puc.cl:8889 -L 6006:hydra.ing.puc.cl:6006 hydra'
 
 
+
+# Created by `pipx` on 2024-03-19 04:02:37
+export PATH="$PATH:/Users/tom/.local/bin"
+export PATH="/usr/local/opt/python@3.10/bin:$PATH"
+
+
+
+eval "$(/Users/tom/miniconda3/bin/conda shell.zsh hook)"
